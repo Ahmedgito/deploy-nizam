@@ -16,8 +16,8 @@ const Navbar = () => {
         style={{
           backgroundImage: `url(${background})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          height: '100vh',
+          backgroundPosition: 'left',
+          height: '130vh',
           filter: 'blur(8px)',  // Only background image gets blurred
           position: 'absolute',
           top: 0,
@@ -46,9 +46,9 @@ const Navbar = () => {
             </svg>
           </button>
           <div className="hidden md:block">
-            <ul className="flex space-x-8">
-              <li><a href="#" className="text-white">About Us</a></li>
-              <li><a href="#" className="text-white">Production</a></li>
+            <ul className="flex space-x-8 font-bold">
+              <li><a href="#" className="text-white ">About Us</a></li>
+              <li><a href="#" className="text-white ">Production</a></li>
               <li><a href="#" className="text-white">Products</a></li>
               <li><a href="#" className="text-white">Sustainability</a></li>
               <li><a href="#" className="text-white">Contact Us</a></li>
