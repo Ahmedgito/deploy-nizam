@@ -22,7 +22,7 @@ const Navbar = () => {
           position: 'absolute',
           top: 0,
           left: 0,
-          width: '150%',
+          width: '100%',
           zIndex: -1,  // Send background behind other content
         }}
       />
@@ -45,27 +45,54 @@ const Navbar = () => {
               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
             </svg>
           </button>
-          <div className={`w-full md:block md:w-auto ${isMenuOpen ? 'block' : 'hidden'}`} id="navbar-default">
-            <ul className="flex flex-col p-4 md:flex-row md:space-x-8 md:mt-0 md:p-0">
-              <li>
-                <a href="#" className="block py-2 px-4 text-white hover:text-gray-300">About Us</a>
-              </li>
-              <li>
-                <a href="#" className="block py-2 px-4 text-white hover:text-gray-300">Production</a>
-              </li>
-              <li>
-                <a href="#" className="block py-2 px-4 text-white hover:text-gray-300">Products</a>
-              </li>
-              <li>
-                <a href="#" className="block py-2 px-4 text-white hover:text-gray-300">Sustainability</a>
-              </li>
-              <li>
-                <a href="#" className="block py-2 px-4 text-white hover:text-gray-300">Contact Us</a>
-              </li>
+          <div className="hidden md:block">
+            <ul className="flex space-x-8">
+              <li><a href="#" className="text-white">About Us</a></li>
+              <li><a href="#" className="text-white">Production</a></li>
+              <li><a href="#" className="text-white">Products</a></li>
+              <li><a href="#" className="text-white">Sustainability</a></li>
+              <li><a href="#" className="text-white">Contact Us</a></li>
             </ul>
           </div>
         </div>
       </nav>
+
+      {/* Mobile Menu */}
+      <div
+        className={`fixed top-0 right-0 w-64 h-full bg-black text-white transition-transform transform ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+        style={{ zIndex: 20 }}
+      >
+        <div className="flex justify-end p-4">
+          <button
+            onClick={toggleMenu}
+            className="text-white focus:outline-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <ul className="flex flex-col items-start p-4 space-y-4">
+          <li><a href="#" className="text-white text-lg">About Us</a></li>
+          <li><a href="#" className="text-white text-lg">Production</a></li>
+          <li><a href="#" className="text-white text-lg">Products</a></li>
+          <li><a href="#" className="text-white text-lg">Sustainability</a></li>
+          <li><a href="#" className="text-white text-lg">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
   );
 };
