@@ -54,7 +54,7 @@ const Navbar = () => {
             <div className="hidden md:block">
               
               <ul className="flex space-x-6 md:space-x-10 text-lg md:text-xl">
-                <li><a href="#" className="text-white">HELLLLLLOOOOOOOO</a></li>
+                <li><a href="#" className="text-white">About Us</a></li>
                 <li><a href="#" className="text-white">Production</a></li>
                 <li><a href="#" className="text-white">Products</a></li>
                 <li><a href="#" className="text-white">Sustainability</a></li>
