@@ -1,0 +1,23 @@
+
+.heading-small {
+    line-height: 1.1; 
+  }
+  
+  .heading-large {
+    line-height: 1.2; 
+  }
+  
+  .paragraph {
+    line-height: 1.4; 
+  }
+  
+
+  .no-gap {
+    margin-bottom: 0; 
+  }
+  
+  .image-large {
+    max-width: 100%; 
+    height: auto; 
+  }
+  
