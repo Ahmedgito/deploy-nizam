@@ -7,12 +7,12 @@ import fireIcon from '../../../../assets/fire.png';
 
 const Section3 = () => {
   return (
-    <div className='bg-white '>
-        <br />
-      <section className=" md:flex hidden relative w-full h-[450px] flex items-center justify-center">
-        {/* Background Image */}
+    <div className="bg-white">
+      <br />
+      <section className="md:flex hidden relative w-full h-[450px] flex items-center justify-center">
+        {/* Background Image with sliding from top animation */}
         <div
-          className="w-full h-full"
+          className="w-full h-full animate-slide-in-top"
           style={{
             backgroundImage: `url(${backgroundImage})`,
             backgroundSize: 'cover',
@@ -22,40 +22,39 @@ const Section3 = () => {
         </div>
 
         {/* Heading */}
-        <h1 className="font-montserrat absolute  left-[50%] top-10 text-5xl font-bold text-orange-500">
-          PRODUCT RANGE
-        </h1>
-        
+        <h1 className="font-montserrat animate-slide-in-top-right absolute left-[50%] top-10 text-5xl font-bold text-orange-500">
+         PRODUCT RANGE
+         </h1>
 
-        {/* Icons and Text Section */}
+        {/* Icons and Text Section with pop-in animation */}
         <div className="absolute h-full flex items-center justify-end bg-transparent text-white w-full">
           <div className="flex flex-row space-x-20 text-center p-8">
             {/* Icon 1 - Industrial Range */}
-            <div>
+            <div className="animate-pop-in">
               <img src={industrialIcon} alt="Industrial Range" className="w-32 h-32 mx-auto mb-4" />
               <h3 className="text-lg font-bold">Industrial Range</h3>
             </div>
-            
+
             {/* Icon 2 - Hi Vis Range */}
-            <div>
+            <div className="animate-pop-in delay-1000">
               <img src={hiVisIcon} alt="Hi Vis Range" className="w-32 h-32 mx-auto mb-4" />
               <h3 className="text-lg font-bold">Hi Vis Range</h3>
             </div>
 
             {/* Icon 3 - Institutional Range */}
-            <div>
+            <div className="animate-pop-in delay-1000">
               <img src={institutionalIcon} alt="Institutional Range" className="w-32 h-32 mx-auto mb-4" />
               <h3 className="text-lg font-bold">Institutional Range</h3>
             </div>
 
             {/* Icon 4 - Fire Range */}
-            <div>
+            <div className="animate-pop-in delay-1000">
               <img src={fireIcon} alt="Fire Range" className="w-32 h-32 mx-auto mb-4" />
               <h3 className="text-lg font-bold">Fire Range</h3>
             </div>
 
             {/* Icon 5 - Outerwear */}
-            <div>
+            <div className="animate-pop-in delay-1000">
               <img src={hiVisIcon} alt="Outerwear" className="w-32 h-32 mx-auto mb-4" />
               <h3 className="text-lg font-bold">Outerwear</h3>
             </div>
