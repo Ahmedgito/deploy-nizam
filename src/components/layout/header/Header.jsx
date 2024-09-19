@@ -1,7 +1,6 @@
-import logo from '../../../assets/logo1.png'
+import logo from '../../../assets/logo1.png';
 import { useState } from 'react';
-import background from '../../../assets/bg.jpg'
-
+import background from '../../../assets/bgg.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,20 +11,19 @@ const Header = () => {
 
   return (
     <div style={{ margin: '0', padding: '0' }}>
-      <section className="relative h-[110vh] md:h-[85vh] "> {/* Updated z-index */}
+      <section className="relative h-[110vh] md:h-[85vh] overflow-hidden">
         {/* Background Image */}
         <div
           style={{
             backgroundImage: `url(${background})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'left',
-            height: '110%',
-            width: '180%',
-            filter: 'blur(10px)',
+            backgroundPosition: 'center', // Adjust to center the background image
+            height: '100%',
+            width: '100%',
             position: 'absolute',
-            top: '-10%',
-            left: '-10%',
-            
+            top: '0c:\Users\MEAN 3\Downloads\Layer-23-copy-min.png',
+            left: '0',
+            zIndex: '-1',
           }}
         />
         {/* Nav */}
@@ -60,12 +58,10 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 right-0 w-80 h-full bg-black text-white transition-transform transform ${
-            isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-          }`}
+          className={`fixed top-0 right-0 md:w-80 w-10/12 h-full bg-black text-white transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
           style={{ zIndex: 20 }}
         >
-          <div className="flex justify-end p-4">
+          <div className="flex justify-start p-4">
             <button onClick={toggleMenu} className="text-white focus:outline-none">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -73,10 +69,10 @@ const Header = () => {
             </button>
           </div>
           <a href="/" className="flex justify-start">
-            <img src={logo} className="  h-10 md:h-14 " alt="Logo" />
+            <img src={logo} className="h-10 md:h-14" alt="Logo" />
           </a>
           <ul className="flex flex-col items-start p-4 space-y-4">
-            <li><a href="#" className="text-white text-lg"> About Us</a></li>
+            <li><a href="#" className="text-white text-lg">About Us</a></li>
             <li><a href="#" className="text-white text-lg">Production</a></li>
             <li><a href="#" className="text-white text-lg">Products</a></li>
             <li><a href="#" className="text-white text-lg">Sustainability</a></li>
