@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import './styles.css'; // Adjust the path if necessary
-import { BrowserRouter ,Route , Routes } from 'react-router-dom';
-import Homepage from './components/pages/Homepage/Homepage';
-
+import Homepage from './components/pages/Home/Homepage';
 
 const App = () => {
   return(
     <>
-    <Homepage/>
+    <Homepage />
     </>
   ) ;
 
