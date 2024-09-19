@@ -7,9 +7,9 @@ import fireIcon from '../../../../assets/fire.png';
 
 const Section3 = () => {
   return (
-    <div className='bg-white'>
+    <div className='bg-white '>
         <br />
-      <section className="relative w-full h-[450px] flex items-center justify-center">
+      <section className=" md:flex hidden relative w-full h-[450px] flex items-center justify-center">
         {/* Background Image */}
         <div
           className="w-full h-full"
