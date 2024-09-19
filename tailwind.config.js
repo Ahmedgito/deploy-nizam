@@ -29,9 +29,9 @@ export default {
         },
       },
       animation: {
-        'pop-in': 'popIn 0.6s ease-in-out',
+        'pop-in': 'popIn 1.0s ease-in-out',
         'fade-in': 'fadeIn 1s ease-in-out',
-        'slide-in-top': 'slideInTop 1.5s ease-out',
+        'slide-in-top': 'slideInTop 1.0s ease-out',
         'slide-in-top-right': 'slideInTopRight 1.5s ease-out',
       },
     },
