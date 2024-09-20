@@ -10,7 +10,7 @@ const Section2 = () => {
         <>
         
         {/* {Section For Large Devices} */}
-  <section className="md:flex hidden items-center justify-center py-10 -z-10">   
+  <section className="md:flex hidden items-center justify-center py-16 -z-10">   
     {/* Heading */}
   <h2 className="text-6xl font-thin text-orange-500 mr-4 ">
     ABOUT
@@ -25,7 +25,7 @@ const Section2 = () => {
 
 
 {/* {Section For Mobile Devices} */}
-<section className="flex md:hidden flex-col items-center justify-center py-10 relative -z-10">
+<section className="flex md:hidden flex-col items-center justify-center py-16 relative -z-10">
 
   {/* Heading */}
   <h2 className="text-4xl font-thin text-orange-500 mb-4 text-center">

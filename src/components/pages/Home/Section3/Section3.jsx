@@ -5,6 +5,11 @@ import industrialIcon from '../../../../assets/industrial.png';
 import hiVisIcon from '../../../../assets/hivis.png';
 import institutionalIcon from '../../../../assets/institutional.png';
 import fireIcon from '../../../../assets/fire.png';
+import familyIcon from '../../../../assets/person.png';
+import spoolIcon from '../../../../assets/bell.png';
+import factoryIcon from '../../../../assets/factory.png'
+
+
 
 const Section3 = () => {
   // Intersection Observer hook
@@ -69,6 +74,33 @@ const Section3 = () => {
         </div>
       </section>
       <br />
+
+        
+      <section className=" font-montserrat md:hidden bg-orange-500 text-center leading-tight text-white py-10">
+      {/* Title */}
+      <h1 className="text-xl mt-3 font-thin leading-tight">NIZAM</h1>
+      <h2 className="text-2xl font-bold">AT A GLANCE</h2>
+
+      {/* Icon 1 */}
+      <div className="mt-4">
+        <img src={familyIcon}  alt="Family Business" className="w-40 mx-auto" />
+        <p className=" text-lg">Family Business</p>
+        <p>Since 1869</p>
+      </div>
+
+      {/* Icon 2 */}
+      <div className="mt-4">
+        <img src={factoryIcon} alt="Factory" className="w-36 mx-auto" />
+        <p className=" text-lg">6 Factories With</p>
+        <p>Over 1,200,000 Sq Ft</p>
+      </div>
+
+      {/* Icon 3 */}
+      <div className="mt-7">
+        <img src={spoolIcon} alt="Spool" className="w-36 mx-auto" />
+        <p className="mt-4 text-lg">Largest Spool Facility</p>
+      </div>
+    </section>
     </div>
   );
 };
