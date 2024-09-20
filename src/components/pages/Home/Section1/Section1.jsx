@@ -11,7 +11,7 @@ const Section1 = () => {
           </div>
   
           {/* Text Content */}
-          <div className="text-white md:ml-10 text-center md:text-left leading-3">
+          <div className="text-white md:ml-5 text-center md:text-left leading-3">
             <h1 className="text-white text-4xl md:text-7xl font-bold mb-6">VISION</h1> {/* Responsive font size */}
             <p className="text-white text-lg md:text-2xl font-semibold md:max-w-lg">
               TO BE THE MOST INNOVATIVE,<br />
