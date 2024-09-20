@@ -144,6 +144,53 @@ const Section4 = () => {
         </div>
       </div>
     </div>
+
+
+ <div className="bg-orange-400 h-auto flex flex-col justify-center items-center md:hidden py-8">
+  {/* Title */}
+  <div className="text-white text-center mb-4 px-4">
+    <h2 className="text-xl font-bold leading-tight font-montserrat ">
+      NIZAM ONE SIGNIFIES<br />
+      NIZAM TO BECOME<br />
+      NATURE POSITIVE<br />
+      NOT JUST NEUTRAL
+    </h2>
+  </div>
+
+  {/* Dashed Line */}
+  <div className="w-3/4 border-t-2 border-dashed border-white mb-4"></div>
+
+  {/* Icons and Descriptions */}
+  <div className="space-y-8">
+    {/* Carbon Neutral */}
+    <div className="flex flex-col items-center text-center">
+      <img src={carbonIcon} alt="Carbon Neutral" className="w-20 h-20 " />
+      <div className="font-montserrat">
+        <p className="text-lg font-bold text-white">Carbon Neutral</p>
+        <p className="text-white text-sm">by 2022</p>
+      </div>
+    </div>
+
+    {/* Zero Discharge */}
+    <div className="flex flex-col items-center text-center">
+      <img src={waterIcon} alt="Zero Discharge" className="w-20 h-20" />
+      <div className="font-montserrat">
+        <p className="text-lg font-bold text-white">Zero Discharge</p>
+        <p className="text-white text-sm">by 2023</p>
+      </div>
+    </div>
+
+    {/* Nature Positive */}
+    <div className="flex flex-col items-center text-center">
+      <img src={natureIcon} alt="Nature Positive" className="w-20 h-20 " />
+      <div className="font-montserrat">
+        <p className="text-lg font-bold text-white">Nature Positive</p>
+        <p className="text-white text-sm">by 2028</p>
+      </div>
+    </div>
+  </div>
+</div>
+
     </>
   );
 };
