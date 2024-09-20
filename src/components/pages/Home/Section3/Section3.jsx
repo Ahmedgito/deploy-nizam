@@ -21,7 +21,7 @@ const Section3 = () => {
   return (
     <div className="bg-white">
       <br />
-      <section ref={ref} className="md:flex hidden relative w-full h-[450px] flex items-center justify-center">
+      <section ref={ref} className="md:flex hidden relative w-full h-[450px]  items-center justify-center">
         {/* Background Image with sliding from top animation */}
         <div
           className={`w-full h-full ${inView ? 'animate-slide-in-top' : 'opacity-0'}`}
@@ -75,32 +75,11 @@ const Section3 = () => {
       </section>
       <br />
 
-        
-      <section className=" font-montserrat md:hidden bg-orange-500 text-center leading-tight text-white py-10">
-      {/* Title */}
-      <h1 className="text-xl mt-3 font-thin leading-tight">NIZAM</h1>
-      <h2 className="text-2xl font-bold">AT A GLANCE</h2>
+ 
+          
 
-      {/* Icon 1 */}
-      <div className="mt-4">
-        <img src={familyIcon}  alt="Family Business" className="w-40 mx-auto" />
-        <p className=" text-lg">Family Business</p>
-        <p>Since 1869</p>
-      </div>
 
-      {/* Icon 2 */}
-      <div className="mt-4">
-        <img src={factoryIcon} alt="Factory" className="w-36 mx-auto" />
-        <p className=" text-lg">6 Factories With</p>
-        <p>Over 1,200,000 Sq Ft</p>
-      </div>
 
-      {/* Icon 3 */}
-      <div className="mt-7">
-        <img src={spoolIcon} alt="Spool" className="w-36 mx-auto" />
-        <p className="mt-4 text-lg">Largest Spool Facility</p>
-      </div>
-    </section>
     </div>
   );
 };
