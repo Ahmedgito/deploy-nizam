@@ -25,7 +25,7 @@ const Section2 = () => {
 
 
 {/* {Section For Mobile Devices} */}
-<section className="flex md:hidden flex-col items-center justify-center md:py-16 pb-8 pt-24 relative -z-10">
+<section className="flex md:hidden flex-col items-center justify-center md:py-16 pb-2 pt-32 relative -z-10">
 
   {/* Heading */}
   <h2 className="text-4xl font-thin text-orange-500 mb-4 text-center">
