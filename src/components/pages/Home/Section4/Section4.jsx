@@ -5,7 +5,7 @@ import carbonIcon from '../../../../assets/carbon.png';
 import familyIcon from '../../../../assets/person.png';
 import spoolIcon from '../../../../assets/bell.png';
 import factoryIcon from '../../../../assets/factory.png';
-
+import arrowIcon from '../../../../assets/Arrow-min.png';
 
 const Section4 = () => {
   return (
@@ -60,10 +60,13 @@ const Section4 = () => {
     <p>Textile Manufacturer</p>
   </div>
 
-  {/* Read More */}
-  <a href="#" className="absolute bottom-4 right-4 text-white font-semibold me-10">
-    READ MORE 
+  <section>
+  <a href="#" className="absolute bottom-4 right-4 text-white font-semibold me-10 flex items-center">
+  READ MORE
+     <img src={arrowIcon} alt="Arrow Icon" className="h-5 w-5 mr-2" /> 
   </a>
+</section>
+
 </section>
 
 
