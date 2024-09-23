@@ -36,7 +36,7 @@ function Section5() {
 
                             {/* Desktop-only Section */}
 
-    <section className='hidden md:flex' >
+    <section className='hidden md:block' >
         {/* Title */}
         <div className=' text-center mt-20 text-orange-500 font-montserrat text-3xl'>
             <h1>
@@ -121,8 +121,6 @@ function Section5() {
             </div>
         </section>
       </section>
-
-
 
 
                     {/* Mobile-only Section */}
