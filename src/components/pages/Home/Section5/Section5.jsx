@@ -33,6 +33,10 @@ function Section5() {
   
   return (
     <>
+
+                            {/* Desktop-only Section */}
+
+    <section className='hidden md:flex' >
       {/* Title */}
       <div className=' text-center mt-20 text-orange-500 font-montserrat text-3xl'>
         <h1>
@@ -112,9 +116,10 @@ function Section5() {
 </div>
 
         {/* Right Circle */}
-        <div className="absolute top-0 right-0 transform translate-x-1/2">
+        <div className="absolute top-0 right-96 transform translate-x-1/2">
           <img src={CircleIcon} alt="Circle Icon" className="w-24 h-24" />
         </div>
+      </section>
       </section>
     </>
   );
