@@ -95,7 +95,7 @@ const Section4 = () => {
       </section>
 
       {/* Lower Section */}
-      <section className="hidden bg-orange-500 text-white py-10 px-20">
+      <section className="hidden bg-orange-500  text-white py-10 px-20">
         <div className="flex justify-between items-center">
           {/* Family Business */}
           <div className="text-center">
@@ -136,7 +136,7 @@ const Section4 = () => {
       </section>
 
       {/* Main Feature Section */}
-      <div className="bg-orange-400 h-[45vh] md:flex justify-center items-center hidden">
+      <div className="bg-orange-400 h-[90vh] md:flex justify-center items-center hidden">
         <div className="flex w-full max-w-screen-lg">
           {/* Left Side Text */}
           <div className="w-1/2 text-white flex items-center justify-center text-right px-8">

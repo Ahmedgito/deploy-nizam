@@ -4,7 +4,7 @@ import workerImage from '../../../../assets/worker.png' ;
 const Section1 = () => {
     return (
       <>
-        <div className="relative z-10 flex flex-col items-center justify-start md:justify-center h-full px-4 md:px-10 md:flex-row mt-[-780px] sm:mt-[-600px]" >
+        <div className="relative z-10 flex flex-col items-center justify-start md:justify-center h-full px-4 md:px-10 md:flex-row mt-[-720px] sm:mt-[-600px]" >
           {/* Worker Image */}
           <div className="flex-shrink-0" style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
             <img src={workerImage} alt="Worker" className="z-50 max-w-[90%] h-110 md:h-180" /> {/* Responsive image size */}
