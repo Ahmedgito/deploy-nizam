@@ -58,7 +58,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 right-0 md:w-80 w-10/12 h-full bg-black text-white transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+          className={`fixed z-50 top-0 right-0 md:w-80 w-10/12 h-full bg-black text-white transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
           style={{ zIndex: 20 }}
         >
           <div className="flex justify-start p-4">
