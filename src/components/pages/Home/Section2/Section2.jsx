@@ -43,7 +43,30 @@ const Section2 = () => {
 
 
 
-<section className=" font-roboto flex flex-col items-left justify-center px-4  md:mx-20  text-gray-500 text-left">
+<section className=" font-roboto flex md:hidden flex-col items-left justify-center px-4  md:mx-20  text-gray-500 text-left">
+  <p className="text-sm md:text-lg leading-relaxed ">
+    In 2018, building on our legacy in technical textiles and our more recent experience in apparel manufacturing, we diversified our sewing portfolio with Workwear manufacturing in Karachi, Pakistan.</p>
+  <p  className="text-sm md:text-lg leading-relaxed whitespace-pre-line ">
+    Nizam has been built on long-lasting relationships by being consistently reliable to our partners. Our acumen in process control from yarn to finished product complements our workwear business, and our experience dealing with specialized fabrics and high-value articles has  taught us to control every element to provide consistent quality. We continuously work on adding automation and training for skill development to become better than yesterday and meet our goals of reliability.
+  </p>
+  <div className=" font-montserrat container mx-auto flex items-end md:justify-end justify-center ">
+    {/* Heading */}
+    <h3 className="text-xl font-semibold text-orange-500 cursor-pointer me-2">
+      READ MORE
+    </h3>
+
+    {/* Image */}
+    <img 
+      src={readmore}
+      alt="Product Image" 
+      className="w-5 h-5 mb-1 object-contain" 
+    />
+  </div>
+
+</section>
+
+
+<section className=" font-roboto  md:flex hidden flex-col items-left justify-center px-4 md:mx-28  text-gray-500 text-left">
   <p className="text-sm md:text-lg leading-relaxed ">
     In 2018, building on our legacy in technical textiles and our more recent experience in apparel manufacturing, we diversified our sewing portfolio with Workwear manufacturing in Karachi, Pakistan.</p>
   <p  className="text-sm md:text-lg leading-relaxed whitespace-pre-line ">
