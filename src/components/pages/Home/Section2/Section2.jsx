@@ -66,7 +66,7 @@ const Section2 = () => {
 </section>
 
 
-<section className=" font-roboto  md:flex hidden flex-col items-left justify-center px-4 md:mx-28  text-gray-500 text-left">
+<section className=" font-roboto  md:flex hidden flex-col items-left justify-center px-4 md:mx-48  text-gray-500 text-left">
   <p className="text-sm md:text-lg leading-relaxed ">
     In 2018, building on our legacy in technical textiles and our more recent experience in apparel manufacturing, we diversified our sewing portfolio with Workwear manufacturing in Karachi, Pakistan.</p>
   <p  className="text-sm md:text-lg leading-relaxed whitespace-pre-line ">
