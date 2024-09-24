@@ -37,34 +37,34 @@ const Section3 = () => {
 
         {/* Icons and Text Section with pop-in animation */}
         <div className="absolute h-full flex items-center justify-end bg-transparent text-white w-full">
-          <div className="flex flex-row space-x-16 text-center p-8">
+          <div className="flex flex-row space-x-12 text-center p-8">
             {/* Icon 1 - Industrial Range */}
             <div className={`${inView ? 'animate-pop-in' : 'opacity-0'}`}>
-              <img src={industrialIcon} alt="Industrial Range" className="w-24 h-24 mx-auto mb-4" />
+              <img src={industrialIcon} alt="Industrial Range" className="w-24 h-28 mx-auto mb-4" />
               <h3 className="text-lg font-bold">Industrial Range</h3>
             </div>
 
             {/* Icon 2 - Hi Vis Range */}
             <div className={`${inView ? 'animate-pop-in delay-1000' : 'opacity-0'}`}>
-              <img src={hiVisIcon} alt="Hi Vis Range" className="w-24 h-24 mx-auto mb-4" />
+              <img src={hiVisIcon} alt="Hi Vis Range" className="w-24 h-28 mx-auto mb-4" />
               <h3 className="text-lg font-bold">Hi Vis Range</h3>
             </div>
 
             {/* Icon 3 - Institutional Range */}
             <div className={`${inView ? 'animate-pop-in delay-1000' : 'opacity-0'}`}>
-              <img src={institutionalIcon} alt="Institutional Range" className="w-24 h-24 mx-auto mb-4" />
+              <img src={institutionalIcon} alt="Institutional Range" className="w-24 h-28 mx-auto mb-4" />
               <h3 className="text-lg font-bold">Institutional Range</h3>
             </div>
 
             {/* Icon 4 - Fire Range */}
             <div className={`${inView ? 'animate-pop-in delay-1000' : 'opacity-0'}`}>
-              <img src={fireIcon} alt="Fire Range" className="w-24 h-24 mx-auto mb-4" />
+              <img src={fireIcon} alt="Fire Range" className="w-24 h-28 mx-auto mb-4" />
               <h3 className="text-lg font-bold">Fire Range</h3>
             </div>
 
             {/* Icon 5 - Outerwear */}
             <div className={`${inView ? 'animate-pop-in delay-1000' : 'opacity-0'}`}>
-              <img src={hiVisIcon} alt="Outerwear" className="w-24 h-24 mx-auto mb-4" />
+              <img src={hiVisIcon} alt="Outerwear" className="w-24 h-28 mx-auto mb-4" />
               <h3 className="text-lg font-bold">Outerwear</h3>
             </div>
           </div>
