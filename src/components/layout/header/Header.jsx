@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <div style={{ margin: '0', padding: '0' }}>
-      <section className="relative h-[100vh] md:h-max-96 overflow-hidden">
+      <section className="relative h-[100vh] md:h-max- overflow-hidden">
         {/* Background Image */}
         <div
           style={{

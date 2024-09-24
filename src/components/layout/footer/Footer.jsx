@@ -12,16 +12,12 @@ const Footer = () => {
           <p className="text-gray-200 mt-6 text-base"> {/* Increased text size */}
             In a predominately old industry, NIZAM has established itself as a world leader today, with its vision of investment in modern equipment/technology, manufacturing innovation. Hence enabling us to make products timely, efficiently, and cost-effectively.
           </p>
-          <p className="text-gray-200 text-base mt-6"> {/* Increased text size */}
+          <p className="text-gray-200 text-base mt-32"> {/* Increased text size */}
             <img src ={linkedin} />
             Copyright © 2024 H. Nizam Din & Sons. All Rights Reserved.<br />
             Powered by IdeaBox
           </p>
-          <div className="mt-8">
-            <p className="text-gray-300 text-lg">SYMBOL OF TRUST</p> {/* Increased text size */}
-            <p className="text-gray-300 text-lg">SINCE <span className="text-5xl font-bold">1869</span></p> {/* Increased text size */}
-             {/* Increased year size */}
-          </div>
+         
         </div>
         
         {/* Column 2 - Businesses */}
@@ -48,6 +44,11 @@ const Footer = () => {
             <li><a href="#" className="text-gray-200 hover:text-white text-lg">Sustainability</a></li>
             <li><a href="#" className="text-gray-200 hover:text-white text-lg">Contact Us</a></li>
           </ul>
+          <div className="mt-8">
+            <p className="text-gray-300 text-lg">SYMBOL OF TRUST</p> {/* Increased text size */}
+            <p className="text-gray-300 text-md">SINCE <span className="text-5xl font-bold">1869</span></p> {/* Increased text size */}
+             {/* Increased year size */}
+          </div>
         </div>
       </div>
     </footer>
