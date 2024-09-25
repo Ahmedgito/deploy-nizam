@@ -8,10 +8,12 @@ import factoryIcon from '../../../../assets/factory.png';
 import arrowIcon from '../../../../assets/Arrow-min.png';
 import girlworker from '../../../../assets/girl.png';
 
-const Section4 = () => {
+const Section4 = React.forwardRef((props, ref) => {
   return (
     <>
-                                        {/* Mobile-only Section */}
+    <div ref={ref} data-title="Nizam at Glance">
+
+                            {/* Mobile-only Section */}
 
       <section className="font-montserrat bg-orange-500 text-center leading-tight text-white py-10 md:hidden">
         {/* Title */}
@@ -235,9 +237,9 @@ const Section4 = () => {
         </div>
       </div>
     </div>
-
+    </div>
     </>
   );
-};
+});
 
 export default Section4;

@@ -1,14 +1,15 @@
 import React from "react";
 import helmet from '../../../../assets/helmet.png'
 import readmore from '../../../../assets/Arrow-min.png'
+import { Helmet } from "react-helmet";
 
 
-
-const Section2 = () => {
+const Section2 = React.forwardRef((props, ref) => {
 
     return(
         <>
- 
+
+  <div ref={ref} data-title="About Nizam">
   {/* {Section For Mobile Devices} */}
 <section className="flex md:hidden flex-col items-center justify-center md:py-16 pb-2 pt-32 relative -z-10">
 
@@ -90,10 +91,10 @@ const Section2 = () => {
 <section className=" py-auto md:py-3 md:px-auto">
   
   </section>
-
+  </div>
         </>
     ) 
-} ;
+}) ;
 
 
 export default Section2 ; 

@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Section6 = () => {
+const Section6 = React.forwardRef((props, ref) => {
   return (
     <>
     
+    <div ref={ref} data-title="Contact Us">
     {/* Desktop-only Section */}
 
     <section className='hidden md:block' >
@@ -126,10 +127,9 @@ const Section6 = () => {
       </div>
     </div>
     </section>
-
-
+    </div>
     </>
   );
-};
+});
 
 export default Section6;

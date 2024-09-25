@@ -17,7 +17,7 @@ import Global from '../../../../assets/global.png';
 import OEKO from '../../../../assets/ppp.png';
 import WWF from '../../../../assets/wwf.png';
 
-function Section5() {
+const Section5 = React.forwardRef((props, ref) => {
   const icons = [
     OekoTex, BCI, ISO9001, ISO14001, CE, Wrap, BSCI, CTPAT, Recycled, Organic,
   ];
@@ -34,7 +34,9 @@ function Section5() {
   return (
     <>
 
-                            {/* Desktop-only Section */}
+    <div ref={ref} data-title="Compliance Certificate">
+
+                   {/* Desktop-only Section */}
 
     <section className='hidden md:block' >
             {/* Title */}
@@ -183,12 +185,12 @@ function Section5() {
 </div>
 </section>
 
-
+</div>
 
 
 
     </>
   );
-}
+});
 
 export default Section5;

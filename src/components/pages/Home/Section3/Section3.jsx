@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import backgroundImage from '../../../../assets/part-2PNG.png';
 import industrialIcon from '../../../../assets/industrial.png';
@@ -6,19 +6,17 @@ import hiVisIcon from '../../../../assets/hivis.png';
 import institutionalIcon from '../../../../assets/institutional.png';
 import fireIcon from '../../../../assets/fire.png';
 
-
-
-const Section3 = () => {
-  // Intersection Observer hook
-  const { ref, inView } = useInView({
+const Section3 = React.forwardRef((props, sectionRef) => {
+  // Intersection Observer hook for animations
+  const { ref: inViewRef, inView } = useInView({
     triggerOnce: true, // Trigger animation only once
     threshold: 0.1, // Trigger when 10% of the section is visible
   });
 
   return (
-    <div className="bg-white">
+    <div className="bg-white" ref={sectionRef} data-title="Product Range">
       <br />
-      <section ref={ref} className="md:flex hidden relative w-full h-[450px]  items-center justify-center">
+      <section ref={inViewRef} className="md:flex hidden relative w-full h-[450px] items-center justify-center">
         {/* Background Image with sliding from top animation */}
         <div
           className={`w-full h-full ${inView ? 'animate-slide-in-top' : 'opacity-0'}`}
@@ -27,12 +25,11 @@ const Section3 = () => {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
-        >
-        </div>
+        ></div>
 
         {/* Heading */}
         <h1 className={`font-montserrat absolute left-[50%] top-10 text-5xl font-bold text-orange-500 ${inView ? 'animate-slide-in-top-right' : 'opacity-0'}`}>
-         PRODUCT RANGE
+          PRODUCT RANGE
         </h1>
 
         {/* Icons and Text Section with pop-in animation */}
@@ -71,9 +68,8 @@ const Section3 = () => {
         </div>
       </section>
       <br />
-
     </div>
   );
-};
+});
 
 export default Section3;
