@@ -135,50 +135,59 @@ const Section4 = () => {
         </div>
       </section>
 
-      {/* Main Feature Section */}
-      <div className="bg-orange-400 h-[90vh] md:flex justify-center items-center hidden">
-        <div className="flex w-full max-w-screen-lg">
-          {/* Left Side Text */}
-          <div className="w-1/2 text-white flex items-center justify-center text-right px-8">
-            <h2 className="text-4xl font-bold font-montserrat leading-snug">
-              NIZAM ONE SIGNIFIES<br />
-              NIZAM TO BECOME<br />
-              NATURE POSITIVE<br />
-              NOT JUST NEUTRAL
-            </h2>
-          </div>
+{/* Main Feature Section */}
+<div className="bg-orange-400 h-[35rem] md:flex justify-center items-center relative hidden">
+  {/* Image of the girl */}
+  <img
+    src={girlworker} 
+    alt="Girl"
+    className="absolute top-28 -left-5 w-1/4 h-[100%] z-30 m-0"
+  />
 
-          {/* Vertical Dashed Line */}
-          <div className="border-l-4 border-dashed border-white mx-8"></div>
+  <div className="flex w-full max-w-screen-lg">
+    {/* Left Side Text */}
+    <div className="w-1/2 text-white flex items-center justify-center text-right px-0 pl-[13%]">
+      <h2 className="text-3xl font-bold z-50 font-montserrat leading-8">
+        NIZAM ONE SIGNIFIES <br />
+        NIZAM TO BECOME<br />
+        NATURE POSITIVE<br />
+        NOT JUST NEUTRAL
+      </h2>
+    </div>
 
-          {/* Right Side List */}
-          <div className="w-1/2 pl-2">
-            <div className="mb-6 flex items-center">
-              <img src={carbonIcon} alt="Carbon Neutral" className="w-24 h-22 mr-4" />
-              <div className="font-montserrat ms-8">
-                <p className="text-3xl font-semibold text-white">Carbon Neutral</p>
-                <p className="text-white text-lg">by 2022</p>
-              </div>
-            </div>
+    {/* Vertical Dashed Line */}
+    <div className="border-l-4 border-dashed border-white mx-8"></div>
 
-            <div className="mb-6 flex items-center font-montserrat">
-              <img src={waterIcon} alt="Zero Discharge" className="w-24 h-24 mr-4" />
-              <div className="font-montserrat ms-8">
-                <p className="text-3xl font-semibold text-white">Zero Discharge</p>
-                <p className="text-white text-lg">by 2023</p>
-              </div>
-            </div>
-
-            <div className="flex items-center font-montserrat">
-              <img src={natureIcon} alt="Nature Positive" className="w-24 h-24 mr-4" />
-              <div className="ms-8">
-                <p className="text-3xl font-semibold text-white">Nature Positive</p>
-                <p className="text-white text-lg">by 2028</p>
-              </div>
-            </div>
-          </div>
+    {/* Right Side List */}
+    <div className="w-1/2 pl-2">
+      <div className="mb-6 flex items-center">
+        <img src={carbonIcon} alt="Carbon Neutral" className="w-24 h-22 mr-4" />
+        <div className="font-montserrat ms-8">
+          <p className="text-3xl font-semibold text-white">Carbon Neutral</p>
+          <p className="text-white text-lg">by 2022</p>
         </div>
       </div>
+
+      <div className="mb-6 flex items-center font-montserrat">
+        <img src={waterIcon} alt="Zero Discharge" className="w-24 h-24 mr-4" />
+        <div className="font-montserrat ms-8">
+          <p className="text-3xl font-semibold text-white">Zero Discharge</p>
+          <p className="text-white text-lg">by 2023</p>
+        </div>
+      </div>
+
+      <div className="flex items-center font-montserrat">
+        <img src={natureIcon} alt="Nature Positive" className="w-24 h-24 mr-4" />
+        <div className="ms-8">
+          <p className="text-3xl font-semibold text-white">Nature Positive</p>
+          <p className="text-white text-lg">by 2028</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
       {/* Mobile Version of Feature Section */}
       <div className="bg-orange-400 h-auto flex flex-col justify-center items-center md:hidden py-8">

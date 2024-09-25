@@ -46,7 +46,7 @@ function Section5() {
 
             <section className="relative bg-white py-16">
                 {/* Left Circle */}
-                <div className="absolute top-0 left-0 transform -translate-x-1/2">
+                <div className="absolute top-0 left-28 transform -translate-x-1/2">
                 <img src={CircleIcon} alt="Circle Icon" className="w-48 h-48" />
                 </div>
 
@@ -116,7 +116,7 @@ function Section5() {
         </div>
 
                 {/* Right Circle */}
-                <div className="absolute top-0 right-96 transform translate-x-1/2">
+                <div className="absolute -top-20 right-96 transform translate-x-1/2">
                 <img src={CircleIcon} alt="Circle Icon" className="w-24 h-24" />
                 </div>
             </section>
