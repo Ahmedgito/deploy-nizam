@@ -39,72 +39,79 @@ const Section4 = React.forwardRef((props, ref) => {
           </div>
         </section>
 
-        {/* Desktop Section */}
-        <div className="grid grid-cols-1 md:grid-cols-[25%_74%_1%]">
-          {/* Left Blank Column with White Background */}
-          <div class="h-full w-full max-w relative">
-        <div class="bg-white h-1/2 w-full absolute top-0"></div>
-        <div class="bg-[#FB923C] h-3/4 w-full absolute bottom-0"></div>
+     {/* Desktop Section */}
+<div className="grid grid-cols-1 md:grid-cols-[25%_74%_1%] relative">
+  {/* Left Blank Column with White Background */}
+  <div className="h-full w-full max-w relative">
+    <div className="bg-white h-1/2 w-full absolute top-0"></div>
+    <div className="bg-[#FB923C] h-3/4 w-full absolute bottom-0"></div>
+  </div>
+
+  {/* Overlay Text */}
+  <div className="absolute left-[25%] top-[calc(25%)] transform -translate-y-1/2 text-black font-bold text-2xl">
+    NIZAM AT GLANCE
+  </div>
+
+  {/* Right Column with Icons */}
+  <div className="bg-orange-500 text-white py-10 relative flex justify-end items-center font-montserrat">
+    {/* Family Business Icon */}
+    <div className="text-center me-20">
+      <img
+        src={familyIcon}
+        style={{ filter: "brightness(0) invert(1)" }}
+        alt="Family Business"
+        className="w-36 h-36 mx-auto mb-4"
+      />
+      <p className="text-lg leading-tight">Family Business</p>
+      <p>Since 1869</p>
     </div>
 
-          {/* Right Column with Icons */}
-          <div className="bg-orange-500 text-white py-10 relative flex justify-end items-center font-montserrat">
-            {/* Family Business Icon */}
-            <div className="text-center me-28">
-              <img
-                src={familyIcon}
-                style={{ filter: "brightness(0) invert(1)" }}
-                alt="Family Business"
-                className="w-36 h-36 mx-auto mb-4"
-              />
-              <p className="text-lg leading-tight">Family Business</p>
-              <p>Since 1869</p>
-            </div>
+    {/* Factory Icon */}
+    <div className="text-center me-20">
+      <img
+        src={factoryIcon}
+        style={{ filter: "brightness(0) invert(1)" }}
+        alt="Factories"
+        className="w-36 h-36 mx-auto mb-4"
+      />
+      <p className="text-lg leading-tight">6 Factories With</p>
+      <p>Over 1,200,000 Sq Ft</p>
+    </div>
 
-            {/* Factory Icon */}
-            <div className="text-center me-28">
-              <img
-                src={factoryIcon}
-                style={{ filter: "brightness(0) invert(1)" }}
-                alt="Factories"
-                className="w-36 h-36 mx-auto mb-4"
-              />
-              <p className="text-lg leading-tight">6 Factories With</p>
-              <p>Over 1,200,000 Sq Ft</p>
-            </div>
+    {/* Spool Icon */}
+    <div className="text-center me-72">
+      <img
+        src={spoolIcon}
+        style={{ filter: "brightness(0) invert(1)" }}
+        alt="Textile Manufacturer"
+        className="w-36 h-36 mx-auto mb-4"
+      />
+      <p className="text-lg">Vertical And Diversified</p>
+      <p>Textile Manufacturer</p>
+    </div>
 
-            {/* Spool Icon */}
-            <div className="text-center me-80">
-              <img
-                src={spoolIcon}
-                style={{ filter: "brightness(0) invert(1)" }}
-                alt="Textile Manufacturer"
-                className="w-36 h-36 mx-auto mb-4"
-              />
-              <p className="text-lg">Vertical And Diversified</p>
-              <p>Textile Manufacturer</p>
-            </div>
+    {/* Read More Section */}
+    <div>
+      <a href="#" className="absolute bottom-4 right-4 text-white font-semibold me-10 flex items-center">
+        READ MORE
+        <img
+          src={arrowIcon}
+          alt="Arrow Icon"
+          style={{ filter: "brightness(0) invert(1)" }}
+          className="h-5 w-5 mr-2 ms-2"
+        />
+      </a>
+    </div>
+  </div>
 
-            {/* Read More Section */}
-            <div>
-              <a href="#" className="absolute bottom-4 right-4 text-white font-semibold me-10 flex items-center">
-                READ MORE
-                <img
-                  src={arrowIcon}
-                  alt="Arrow Icon"
-                  style={{ filter: "brightness(0) invert(1)" }}
-                  className="h-5 w-5 mr-2 ms-2"
-                />
-              </a>
-            </div>
-       
-          </div>
+  {/* 3rd Column */}
+  <div className="h-full w-full max-w relative">
+    <div className="bg-white h-1/2 w-full absolute top-0"></div>
+    <div className="bg-[#FB923C] h-3/4 w-full absolute bottom-0"></div>
+  </div>
+</div>
+    
 
-          <div class="h-full w-full max-w relative">
-        <div class="bg-white h-1/2 w-full absolute top-0"></div>
-        <div class="bg-[#FB923C] h-3/4 w-full absolute bottom-0"></div>
-       </div>
-        </div>
 
         {/* Lower Section */}
         <section className="hidden bg-orange-500 text-white py-10 px-20">
