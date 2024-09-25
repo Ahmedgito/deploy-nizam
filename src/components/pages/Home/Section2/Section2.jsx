@@ -1,6 +1,6 @@
 import React from "react";
-import helmet from '../../../../assets/helmet.png'
-import readmore from '../../../../assets/Arrow-min.png'
+import helmet from '../../../../assets/Home/helmet.png'
+import readmore from '../../../../assets/Home/Arrow-min.png'
 import { Helmet } from "react-helmet";
 
 

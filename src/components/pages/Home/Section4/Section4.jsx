@@ -1,12 +1,12 @@
 import React from "react";
-import waterIcon from '../../../../assets/water.png';
-import natureIcon from '../../../../assets/nature.png';
-import carbonIcon from '../../../../assets/carbon.png';
-import familyIcon from '../../../../assets/person.png';
-import spoolIcon from '../../../../assets/bell.png';
-import factoryIcon from '../../../../assets/factory.png';
-import arrowIcon from '../../../../assets/Arrow-min.png';
-import girlworker from '../../../../assets/girl.png';
+import waterIcon from '../../../../assets/Home/water.png';
+import natureIcon from '../../../../assets/Home/nature.png';
+import carbonIcon from '../../../../assets/Home/carbon.png';
+import familyIcon from '../../../../assets/Home/person.png';
+import spoolIcon from '../../../../assets/Home/bell.png';
+import factoryIcon from '../../../../assets/Home/factory.png';
+import arrowIcon from '../../../../assets/Home/Arrow-min.png';
+import girlworker from '../../../../assets/Home/girl.png';
 
 const Section4 = React.forwardRef((props, ref) => {
   return (
@@ -79,7 +79,7 @@ const Section4 = React.forwardRef((props, ref) => {
     </div>
 
     {/* Spool Icon */}
-    <div className="text-center me-72">
+    <div className="text-center me-72   ">
       <img
         src={spoolIcon}
         style={{ filter: "brightness(0) invert(1)" }}

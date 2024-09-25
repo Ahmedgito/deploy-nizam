@@ -1,21 +1,21 @@
 import React from 'react';
-import CircleIcon from '../../../../assets/t-circle.png'; // Adjust the path according to your project
-import OekoTex from '../../../../assets/1.png';
-import BCI from '../../../../assets/bci.jpg';
-import ISO9001 from '../../../../assets/9001.png';
-import ISO14001 from '../../../../assets/14001.png';
-import CE from '../../../../assets/ce.png';
-import Wrap from '../../../../assets/wrap.jpg';
-import BSCI from '../../../../assets/bsci.png';
-import CTPAT from '../../../../assets/ctpat.png';
-import Recycled from '../../../../assets/recycled.png';
-import Organic from '../../../../assets/organic.png';
-import BSCI2 from '../../../../assets/bsci2.png';
-import Textile from '../../../../assets/textile.png';
-import Sedex from '../../../../assets/sedex.png';
-import Global from '../../../../assets/global.png';
-import OEKO from '../../../../assets/ppp.png';
-import WWF from '../../../../assets/wwf.png';
+import CircleIcon from '../../../../assets/Home/t-circle.png'; // Adjust the path according to your project
+import OekoTex from '../../../../assets/Home/1.png';
+import BCI from '../../../../assets/Home/bci.jpg';
+import ISO9001 from '../../../../assets/Home/9001.png';
+import ISO14001 from '../../../../assets/Home/14001.png';
+import CE from '../../../../assets/Home/ce.png';
+import Wrap from '../../../../assets/Home/wrap.jpg';
+import BSCI from '../../../../assets/Home/bsci.png';
+import CTPAT from '../../../../assets/Home/ctpat.png';
+import Recycled from '../../../../assets/Home/recycled.png';
+import Organic from '../../../../assets/Home/organic.png';
+import BSCI2 from '../../../../assets/Home/bsci2.png';
+import Textile from '../../../../assets/Home/textile.png';
+import Sedex from '../../../../assets/Home/sedex.png';
+import Global from '../../../../assets/Home/global.png';
+import OEKO from '../../../../assets/Home/ppp.png';
+import WWF from '../../../../assets/Home/wwf.png';
 
 const Section5 = React.forwardRef((props, ref) => {
   const icons = [

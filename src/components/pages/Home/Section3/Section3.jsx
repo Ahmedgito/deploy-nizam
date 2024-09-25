@@ -1,10 +1,10 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import backgroundImage from '../../../../assets/part-2PNG.png';
-import industrialIcon from '../../../../assets/industrial.png';
-import hiVisIcon from '../../../../assets/hivis.png';
-import institutionalIcon from '../../../../assets/institutional.png';
-import fireIcon from '../../../../assets/fire.png';
+import backgroundImage from '../../../../assets/Home/part-2PNG.png';
+import industrialIcon from '../../../../assets/Home/industrial.png';
+import hiVisIcon from '../../../../assets/Home/hivis.png';
+import institutionalIcon from '../../../../assets/Home/institutional.png';
+import fireIcon from '../../../../assets/Home/fire.png';
 
 const Section3 = React.forwardRef((props, sectionRef) => {
   // Intersection Observer hook for animations

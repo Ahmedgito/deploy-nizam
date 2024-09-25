@@ -1,5 +1,5 @@
 import React from 'react';
-import linkedin from '../../../assets/linkedin.png' ; 
+import linkedin from '../../../assets/Home/linkedin.png' ; 
 
 const Footer = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import workerImage from '../../../../assets/worker.png';
+import workerImage from '../../../../assets/Home/worker.png';
 
 const Section1 = React.forwardRef((props, ref) => {
   return (
