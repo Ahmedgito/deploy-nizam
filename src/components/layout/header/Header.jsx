@@ -40,7 +40,7 @@ const getBackgroundImage = () => {
             height: '100%',
             width: '100%',
             position: 'absolute',
-            top: '0c:\Users\MEAN 3\Downloads\Layer-23-copy-min.png',
+            top: '0',
             left: '0',
             zIndex: '-1',
           }}
