@@ -33,6 +33,7 @@ const getBackgroundImage = () => {
       <section className="relative h-[100vh] md:h-max- overflow-hidden">
         {/* Background Image */}
         <div
+        
           style={{
             backgroundImage: `url(${getBackgroundImage()})`,
             backgroundSize: 'cover',
@@ -93,7 +94,7 @@ const getBackgroundImage = () => {
             <img src={logo} className="h-10 md:h-14" alt="Logo" />
           </a>
           <ul className="flex flex-col items-start p-4 space-y-4">
-            <li><a href="#" className="text-white text-lg">About Us</a></li>
+          <li><Link to="/about" className="text-white">About Us</Link></li>
             <li><a href="#" className="text-white text-lg">Production</a></li>
             <li><a href="#" className="text-white text-lg">Products</a></li>
             <li><a href="#" className="text-white text-lg">Sustainability</a></li>
