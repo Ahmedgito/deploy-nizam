@@ -6,16 +6,16 @@ import img3 from '../../../../assets/About/A3.png' ;
 const Section1 = () =>{
     return(
         <>
-       <div className="font-montserrat flex items-center m-20 px-4 md:px-20 bg-white">
+       <div className="font-montserrat  flex items-center  px-10 md:px-20 bg-white">
   <div className="grid grid-cols-1 md:grid-cols-2  md:gap-1 items-center">
 
     {/* Left Column: Image */}
-    <div className="flex justify-center md:justify-end items-center">
+    <div className="flex z-50 justify-center md:justify-end items-center">
       <img src={img1} alt="Introduction Image" className="max-w-full md:text-left text-center h-auto " />
     </div>
 
     {/* Right Column: Text */}
-    <div className=" font-montserrat text-center px-2  md:text-left"> {/* Center text on mobile */}
+    <div className=" z-10 font-montserrat text-center px-2  md:text-left"> {/* Center text on mobile */}
       <h2 className="text-xl  md:text-4xl font-[800] mb-4 text-[#4c301c]">INTRODUCTION</h2>
       <p className="text-gray-600 text-sm md:text-lg  mb-6">
         Haji Nizam Din identified the potential during the mutiny of 1857 and started manufacturing tents for the army in the year 1869.
@@ -29,8 +29,9 @@ const Section1 = () =>{
   </div>
 
 </div>
+<br />
 
-<div className="font-montserrat flex items-center m-20 px-4 md:px-20 bg-white">
+<div className="font-montserrat hidden md:flex items-center px-10 md:px-20 bg-white">
   <div className="grid grid-cols-1 md:grid-cols-2 md:gap-1 items-center">
 
     {/* Left Column: Text */}
@@ -51,7 +52,30 @@ const Section1 = () =>{
   </div>
 </div>
 
-<div className="font-montserrat flex items-center m-20 px-4 md:px-20 bg-white">
+<div className="font-montserrat flex md:hidden items-center px-10 md:px-20 bg-white">
+  <div className="grid grid-cols-1 md:grid-cols-2 md:gap-1 items-center">
+
+    {/* Left Column: Text */}
+   <div className="flex justify-center md:justify-start items-center">
+      <img src={img2} alt="Introduction Image" className="max-w-full md:text-left text-center h-auto" />
+    </div>
+
+    {/* Right Column: Image */}
+    <div className="font-montserrat text-center px-2 md:text-left"> {/* Center text on mobile */}
+      <h2 className="text-xl md:text-4xl font-[800] mb-4 text-[#4c301c]">WORLD WAR II</h2>
+      <p className="text-gray-600 text-sm md:text-lg mb-6">
+      In the year 1939, the military authorities expressed their appreciation by relying on the company for the manufacture of numerous tents. Heavy military demand compelled NIZAM to manufacture different kinds of tents for the military authorities which were sent to various parts of the subcontinent and a new factory was started in1942 in Lahore.
+      </p>
+      <p className="text-gray-600 text-sm md:text-lg">
+      Identifying Karachi as the future of Pakistan after independence modern facility was established in Karachi, Pakistan. It becomes one of the first manufacturing facilities to start exporting products from the 1950s to various countries in the Middle East and Iran.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+<div className="font-montserrat flex items-center px-10 md:px-20 bg-white">
   <div className="grid grid-cols-1 md:grid-cols-2  md:gap-1 items-center">
 
     {/* Left Column: Image */}
