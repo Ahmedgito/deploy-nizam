@@ -1,6 +1,10 @@
 import logo from '../../../assets/Home/logo1.png';
 import { useState } from 'react';
 import background from '../../../assets/Home/bgg.png';
+import Aboutbg from '../../../assets/About/bg.png' ;
+import { Link, useLocation } from 'react-router-dom';
+
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,13 +13,28 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+const location = useLocation();
+
+const getBackgroundImage = () => {
+  switch (location.pathname) {
+    case '/':
+      return background; // Home page background
+    case '/about':
+      return Aboutbg  ; 
+    default:
+      return background; // Fallback background
+  }
+};
+
+
+
   return (
     <div style={{ margin: '0', padding: '0' }}>
       <section className="relative h-[100vh] md:h-max- overflow-hidden">
         {/* Background Image */}
         <div
           style={{
-            backgroundImage: `url(${background})`,
+            backgroundImage: `url(${getBackgroundImage()})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center', // Adjust to center the background image
             height: '100%',
@@ -46,11 +65,13 @@ const Header = () => {
             </button>
             <div className="hidden md:block">
               <ul className="flex space-x-6 md:space-x-10 text-lg md:text-xl">
-                <li><a href="#" className="text-white">About Us</a></li>
+                
+                <li><Link to="/about" className="text-white">About Us</Link></li>
                 <li><a href="#" className="text-white">Production</a></li>
                 <li><a href="#" className="text-white">Products</a></li>
                 <li><a href="#" className="text-white">Sustainability</a></li>
                 <li><a href="#" className="text-white">Contact Us</a></li>
+              
               </ul>
             </div>
           </div>

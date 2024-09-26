@@ -1,11 +1,22 @@
 import React, { useState } from 'react';
-import './styles.css'; // Adjust the path if necessary
+import './styles.css'; 
 import Homepage from './components/pages/Home/Homepage';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import About from './components/pages/AboutUs/About';
 
 const App = () => {
   return(
     <>
-    <Homepage />
+    
+
+      <Routes>
+
+      <Route path="/" element={<Homepage />} />
+      <Route path="/about" element={<About />} />
+
+
+    </Routes>
+
     </>
   ) ;
 
