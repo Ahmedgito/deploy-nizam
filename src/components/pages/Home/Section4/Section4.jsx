@@ -40,7 +40,7 @@ const Section4 = React.forwardRef((props, ref) => {
         </section>
 
      {/* Desktop Section */}
-<div className="grid grid-cols-1 md:grid-cols-[25%_74%_1%] relative">
+<div className="md:grid grid-cols-1 hidden md:grid-cols-[25%_74%_1%] relative">
   {/* Left Blank Column with White Background */}
   <div className="h-full w-full max-w relative">
     <div className="bg-white h-1/2 w-full absolute top-0"></div>
