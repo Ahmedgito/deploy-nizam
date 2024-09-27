@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import Layout from "../../layout/Layout";
 import Section1 from "../AboutUs/Section1/Section1";
+import Section2 from "./Section2/Section2";
 
 
 const About = () => {
@@ -11,6 +12,7 @@ const About = () => {
     return (
       <Layout>
         <Section1 />
+        <Section2 />
       </Layout>
     );
   };
