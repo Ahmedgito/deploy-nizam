@@ -33,7 +33,7 @@ const Section4 = React.forwardRef((props, ref) => {
           </div>
 
           {/* Icon 3 */}
-          <div className="mt-7">
+          <div className="mt-4">
             <img src={spoolIcon} style={{ filter: "brightness(0) invert(1)" }} alt="Spool" className="w-36 mx-auto" />
             <p className="mt-4 text-lg">Largest Spool Facility</p>
           </div>
