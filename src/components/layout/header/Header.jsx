@@ -1,7 +1,7 @@
 import logo from '../../../assets/Home/logo1.png';
 import { useState } from 'react';
 import background from '../../../assets/Home/bgg.png';
-import Aboutbg from '../../../assets/About/bg.png' ;
+import Aboutbg from '../../../assets/About/image.png' ;
 import { Link, useLocation } from 'react-router-dom';
 
 
