@@ -1,23 +1,23 @@
 import React from "react";
-import BackgroundImage from "../../../../assets/About/sectionbg.png"; // Update with correct path
+import BackgroundImage from "../../../../assets/About/sectionbg.png";  
 
 const Section5 = () => {
   return (
     <>
       {/* Desktop Version (Hidden on small screens) */}
-      <section className="hidden md:flex">
+      <section className="md:block hidden ">
         {/* Overlay Section for About Nizam Workwear */}
-        <section
-      className="relative h-64 bg-cover bg-center flex items-center justify-center"
+        <div
+      className="bg-cover bg-center h-[380px] relative"
       style={{
         backgroundImage: `url(${BackgroundImage})`, 
       }}
     >
       {/* Overlay text */}
-      <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
-        <h2 className="text-white text-3xl font-bold">ABOUT NIZAM WORKWEAR</h2>
+      <div className="font-montserrat absolute inset-0 flex items-center pl-32 bg-black bg-opacity-30">
+        <h2 className="text-white text-4xl font-bold">ABOUT NIZAM <br /> WORKWEAR</h2>
       </div>
-    </section>
+    </div>
 
         {/* New Section with Text and Vision Statement */}
         <section className="flex flex-col font-montserrat md:flex-row justify-between items-start py-12">
@@ -63,7 +63,7 @@ const Section5 = () => {
       {/* Mobile Version (Hidden on larger screens) */}
       <section className="flex md:hidden flex-col">
         {/* Overlay Section for About Nizam Workwear */}
-        <section
+        <div
           className="relative h-64 bg-cover bg-center flex items-center justify-center"
           style={{
             backgroundImage: `url(${BackgroundImage})`, // Background image
@@ -75,10 +75,10 @@ const Section5 = () => {
               ABOUT NIZAM <br /> WORKWEAR
             </h2>
           </div>
-        </section>
+        </div>
 
         {/* New Section with Text and Vision Statement */}
-        <section className="flex flex-col font-montserrat justify-between items-start py-12 px-6">
+        <section className="flex flex-col font-montserrat justify-between text-center items-start py-12 px-6">
           {/* Left Text Content */}
           <div className="flex-1 font-medium">
             <p className="text-[#7A7A7A] text-sm mb-6">
@@ -105,10 +105,10 @@ const Section5 = () => {
 
           {/* Right Vision Statement */}
           <div className="flex-1 py-10">
-            <h2 className="text-[#E27B04] text-4xl text-center font-bold mb-4">
+            <h2 className="text-[#E27B04] text-5xl text-center font-bold mb-4">
               VISION
             </h2>
-            <p className="text-[#E27B04] text-xl font-semibold text-center leading-7">
+            <p className="text-[#E27B04] text-xl px-5 font-bold text-center md:leading-7 leading-5">
               TO BE THE MOST INNOVATIVE, <br />
               RELIABLE, AND SUSTAINABLE <br />
               PARTNER FOR WORKWEAR <br />
@@ -117,6 +117,8 @@ const Section5 = () => {
           </div>
         </section>
       </section>
+
+
     </>
   );
 };
