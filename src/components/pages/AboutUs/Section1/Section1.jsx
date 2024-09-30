@@ -6,7 +6,11 @@ import img3 from '../../../../assets/About/A3.png' ;
 const Section1 = () =>{
     return(
         <>
+      <div className="md:hidden top-36 left-1/2 transform -translate-x-1/2 mx-auto absolute font-montserrat flex justify-center text-white font-bold">
+  <h1 className="text-3xl">OUR LEGACY</h1>
+</div>
        <div className="font-montserrat  flex items-center  px-10 md:px-20 bg-white">
+       
   <div className="grid grid-cols-1 md:grid-cols-2  md:gap-1 items-center">
 
     {/* Left Column: Image */}
@@ -29,7 +33,7 @@ const Section1 = () =>{
   </div>
 
 </div>
-<br />
+
 
 <div className="font-montserrat hidden md:flex items-center px-10 md:px-20 bg-white">
   <div className="grid grid-cols-1 md:grid-cols-2 md:gap-1 items-center">

@@ -6,6 +6,7 @@ const Section5 = () => {
     <>
       {/* Desktop Version (Hidden on small screens) */}
       <section className="md:block hidden ">
+        
         {/* Overlay Section for About Nizam Workwear */}
         <div
       className="bg-cover bg-center h-[380px] relative"
