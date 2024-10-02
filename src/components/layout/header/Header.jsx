@@ -98,7 +98,7 @@ const getBackgroundImage = () => {
           </a>
           <ul className="flex flex-col items-start p-4 space-y-4">
           <li><Link to="/about" className="text-white">About Us</Link></li>
-            <li><a href="#" className="text-white text-lg">Production</a></li>
+          <li><Link to="/production" className="text-white">Production</Link></li>
             <li><a href="#" className="text-white text-lg">Products</a></li>
             <li><a href="#" className="text-white text-lg">Sustainability</a></li>
             <li><a href="#" className="text-white text-lg">Contact Us</a></li>
