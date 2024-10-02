@@ -43,7 +43,7 @@ export default {
       animation: {
         'slideInLeft': 'slideInLeft 1s ease-out',
         'pop-in': 'popIn 1.0s ease-in-out',
-        'zoomIn': 'zoomIn 1s ease-out forwards',
+        'zoomIn': 'zoomIn 1.5s ease-out forwards',
         'fade-in': 'fadeIn 1s ease-in-out',
         'slide-in-top': 'slideInTop 1.0s ease-out',
         'slide-in-top-right': 'slideInTopRight 1.5s ease-out',
