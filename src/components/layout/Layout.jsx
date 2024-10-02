@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.6, // Trigger when 60% of a section is visible
+      threshold: 0.5, // Trigger when 60% of a section is visible
     };
 
     const observer = new IntersectionObserver((entries) => {

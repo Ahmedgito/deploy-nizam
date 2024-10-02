@@ -1,6 +1,7 @@
 import logo from '../../../assets/Home/logo1.png';
 import { useState } from 'react';
 import background from '../../../assets/Home/bgg.png';
+import Prodbg from '../../../assets/Production/prod_bg.PNG'
 import Aboutbg from '../../../assets/About/image.png' ;
 import { Link, useLocation } from 'react-router-dom';
 
@@ -21,7 +22,9 @@ const getBackgroundImage = () => {
       return background; // Home page background
     case '/about':
       return Aboutbg  ; 
-    default:
+    case '/production':
+      return Prodbg  ; 
+      default:
       return background; // Fallback background
   }
 };
@@ -68,7 +71,7 @@ const getBackgroundImage = () => {
               <ul className="flex space-x-6 md:space-x-10 text-lg md:text-xl">
                 
                 <li><Link to="/about" className="text-white">About Us</Link></li>
-                <li><a href="#" className="text-white">Production</a></li>
+                <li><Link to="/production" className="text-white">Production</Link></li>
                 <li><a href="#" className="text-white">Products</a></li>
                 <li><a href="#" className="text-white">Sustainability</a></li>
                 <li><a href="#" className="text-white">Contact Us</a></li>
