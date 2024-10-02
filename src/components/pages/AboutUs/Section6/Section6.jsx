@@ -92,7 +92,7 @@ const Section6 = () => {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="slide-item text-gray-600 transition-all duration-100 hover:text-white flex flex-col items-center justify-center md:py-20 hover:bg-orange-500 py-20 bg-gray-100 rounded-lg h-auto w-64 mx-auto group min-h-[300px]" // Added min-h to set a consistent height
+            className="slide-item text-gray-600 transition-all duration-100 hover:text-white flex flex-col items-center justify-center md:py-20 hover:bg-orange-500 py-20 bg-gray-100 rounded-lg h-auto w-64 mx-auto group md:min-h-[300px] min-h-[350px]" // Added min-h to set a consistent height
           >
             <img
               src={slide.icon}

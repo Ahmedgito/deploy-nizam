@@ -11,7 +11,7 @@ const Section1 = () =>{
 </div>
        <div className="font-montserrat  flex items-center  px-10 md:px-20 bg-white">
        
-  <div className="grid grid-cols-1 md:grid-cols-2  md:gap-1 items-center">
+  <div className="md:grid grid-cols-1 md:grid-cols-2  md:gap-1 items-center">
 
     {/* Left Column: Image */}
     <div className="flex z-50 justify-center md:justify-end items-center">
