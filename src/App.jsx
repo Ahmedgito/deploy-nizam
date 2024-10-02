@@ -7,8 +7,7 @@ import About from './components/pages/AboutUs/About';
 const App = () => {
   return(
     <>
-    
-
+  
       <Routes>
 
       <Route path="/" element={<Homepage />} />
