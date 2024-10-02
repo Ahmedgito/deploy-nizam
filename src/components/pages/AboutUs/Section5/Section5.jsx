@@ -1,9 +1,12 @@
 import React from "react";
 import BackgroundImage from "../../../../assets/About/sectionbg.png";  
 
-const Section5 = () => {
+const Section5 = React.forwardRef((props, ref) => {
   return (
-    <>
+    <div 
+    ref={ref}
+      data-title="Vision "
+    >
       {/* Desktop Version (Hidden on small screens) */}
       <section className="md:block hidden ">
         
@@ -120,8 +123,8 @@ const Section5 = () => {
       </section>
 
 
-    </>
+    </div>
   );
-};
+});
 
 export default Section5;

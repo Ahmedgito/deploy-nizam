@@ -3,9 +3,9 @@ import img1 from '../../../../assets/About/f-image.png' ;
 import img2 from '../../../../assets/About/A2.png' ;
 import img3 from '../../../../assets/About/A3.png' ;
 
-const Section1 = () =>{
+const Section1 = React.forwardRef((props, ref) => {
     return(
-        <>
+        <div ref={ref} data-title="About Us">
       <div className="md:hidden top-36 left-1/2 transform -translate-x-1/2 mx-auto absolute font-montserrat flex justify-center text-white font-bold">
   <h1 className="text-3xl">OUR LEGACY</h1>
 </div>
@@ -106,8 +106,8 @@ const Section1 = () =>{
 
 </div>
                 
-        </>
+        </div>
     ) 
-}; 
+}); 
 
 export default Section1 ; 

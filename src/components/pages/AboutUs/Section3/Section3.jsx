@@ -4,10 +4,12 @@ import goodHealth from '../../../../assets/About/Layer-8-min.png';
 import qualityEducation from '../../../../assets/About/Layer-10-min.png';  
 import decentWork from '../../../../assets/About/Layer-11-min.png';  
 
-const Section3 = () => {
+const Section3 = React.forwardRef((props, ref) => {
   return (
     <>
-    <section
+    <section 
+      ref={ref}
+      data-title="Nizam Foundation "
       className="font-montserrat relative bg-cover bg-center text-white h-64 hidden md:flex items-center"
       style={{ backgroundImage: `url(${background})` }}
     >
@@ -86,6 +88,6 @@ const Section3 = () => {
 
 </>
   );
-};
+});
 
 export default Section3;

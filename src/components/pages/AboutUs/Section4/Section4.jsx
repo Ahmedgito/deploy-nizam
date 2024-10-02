@@ -2,10 +2,13 @@ import React from "react";
 import NizamAcademy from "../../../../assets/About/nizam-academy.png" ;
 import NizamFoundation from "../../../../assets/About/nizam-foundation.png" ;
 
-const Section4 = () => {
+const Section4 = React.forwardRef((props, ref) => {
   return (
     <>
-    <section className="font-montserrat md:grid hidden bg-white py-12">
+    <section
+    ref={ref}
+    data-title="Nizam Academy "
+     className="font-montserrat md:grid hidden bg-white py-12">
       {/* Text Section */}
       <div className="font-montserrat container mx-auto px-4">
         {/* Single-column layout, text on top, logos on the next row */}
@@ -142,7 +145,10 @@ const Section4 = () => {
     </div>
 
     {/* Nizam Academy */}
-    <div className="flex flex-col items-center">
+    <div
+    ref={ref}
+      data-title="Nizam Academy "
+    className="flex flex-col items-center">
       <img
         src={NizamAcademy}
         alt="Nizam Academy Logo"
@@ -162,6 +168,6 @@ const Section4 = () => {
 </section>
 </>
   );
-};
+});
 
 export default Section4;

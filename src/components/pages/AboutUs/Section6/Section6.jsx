@@ -34,7 +34,7 @@ const PrevArrow = ({ onClick }) => {
   );
 };
 
-const Section6 = () => {
+const Section6 = React.forwardRef((props, ref) => {
   const settings = {
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -105,7 +105,7 @@ const Section6 = () => {
       </Slider>
     </div>
   );
-};
+});
 
 export default Section6;
 
