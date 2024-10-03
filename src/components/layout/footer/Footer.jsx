@@ -37,10 +37,10 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl font-bold">Quick Links</h2> {/* Increased heading size */}
           <ul className="mt-6 space-y-3">
-            <li><a href="/#" className="text-gray-200 hover:text-white text-lg">Home</a></li> {/* Increased list text size */}
-            <li><a href="/#/about" className="text-gray-200 hover:text-white text-lg">About Us</a></li>
-            <li><a href="/#/production" className="text-gray-200 hover:text-white text-lg">Production</a></li>
-            <li><a href="/#/products" className="text-gray-200 hover:text-white text-lg">Products</a></li>
+            <li><a href="/deploy-nizam/#" className="text-gray-200 hover:text-white text-lg">Home</a></li> {/* Increased list text size */}
+            <li><a href="/deploy-nizam/#/about" className="text-gray-200 hover:text-white text-lg">About Us</a></li>
+            <li><a href="/deploy-nizam/#/production" className="text-gray-200 hover:text-white text-lg">Production</a></li>
+            <li><a href="/deploy-nizam/#/products" className="text-gray-200 hover:text-white text-lg">Products</a></li>
             <li><a href="#" className="text-gray-200 hover:text-white text-lg">Sustainability</a></li>
             <li><a href="#" className="text-gray-200 hover:text-white text-lg">Contact Us</a></li>
           </ul>
