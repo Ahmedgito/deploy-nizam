@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
-import Section1 from '../Production/Section1/Section'
+import Section1 from '../Product/Section1/Section1'
+import Layout from "../../layout/layout";
 import Section2 from "./Section2/Section2";
 import Section3 from "./Section3/Section3";
-import Layout from "../../layout/layout";
+
 
 const About = () => {
     useEffect(() => {

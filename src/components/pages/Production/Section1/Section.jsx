@@ -9,6 +9,9 @@ const Section1 = React.forwardRef((props, sectionRef) => {
   });
 
   return (
+    <>
+  
+
     <section  className="relative bg-white" ref={inViewRef} data-title="Quality in Focus">
       <div className="max-w-full mx-auto px-4 md:px-0">
         <div className="md:text-left text-center md:w-5/6 mx-auto">
@@ -25,6 +28,7 @@ const Section1 = React.forwardRef((props, sectionRef) => {
         </div>
       </div>
     </section>
+    </>
   );
 });
 
