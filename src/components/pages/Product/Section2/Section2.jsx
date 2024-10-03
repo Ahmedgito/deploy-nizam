@@ -4,14 +4,21 @@ import RecycledCollectionIcon from '../../../../assets/Product/2-2.png';
 import TailoredCollectionIcon from '../../../../assets/Product/3-2.png';  
 import SeasonalCollectionIcon from '../../../../assets/Product/4-2.png';  
 import Bg from '../../../../assets/Product/5-2.jpg'; 
+import { useInView } from 'react-intersection-observer';
 
-const Section2 = () => {
+const Section2 = React.forwardRef((props, sectionRef) => {
+    // Intersection Observer hook for animations
+    const { ref: inViewRef, inView } = useInView({
+      triggerOnce: true, // Trigger animation only once
+      threshold: 0.5,    // Trigger when 50% of the section is visible
+    });
   return (
     <>
    
-                        {/* {Mobile-Section} */}
-                        <div className='md:hidden block'>
-                <h1 className='text-orange-500 text-center font-bold text-2xl mb-10'>SUSTAINABLE OUTPUT</h1>
+             {/* {Mobile-Section} */}
+     <div className='md:hidden block'>
+    <h1 className='text-orange-500 text-center font-bold text-2xl mb-10'>SUSTAINABLE OUTPUT</h1>
+
     <section 
       className=" bg-cover bg-center py-8"
       style={{ backgroundImage: `url(${Bg})` }}  // Adding background image
@@ -58,8 +65,9 @@ const Section2 = () => {
 
                     {/* {Desktop-Section} */}
     <section
-      className="md:block relative hidden bg-cover bg-center bg-no-repeat py-16"
-      style={{ backgroundImage: `url(${Bg})` }} // Correct background image interpolation
+    ref={sectionRef} data-title="Our Products"
+    className="md:block relative hidden bg-cover bg-center bg-no-repeat py-16"
+    style={{ backgroundImage: `url(${Bg})` }} // Correct background image interpolation
     >
       {/* Main content container */}
       <div className="container mx-auto text-center text-white">
@@ -69,7 +77,9 @@ const Section2 = () => {
         <p className="mb-8 text-left">Sustainable material with Sustainable process</p>
 
         {/* Icons and descriptions section */}
-        <div className="grid grid-cols-1 leading-5  md:grid-cols-4 gap-0 px-20">
+        <div 
+        ref={inViewRef}
+        className={` grid grid-cols-1 leading-5  md:grid-cols-4 gap-0 px-20 ${inView ? 'animate-slideInBottom' : 'opacity-0'}`}>
           {/* First Icon Section */}
           <div className="flex  flex-col items-center">
             <img src={CircularEconomyIcon} alt="Circular Economy" className="h-32  mb-4" />
@@ -102,7 +112,7 @@ const Section2 = () => {
     </section>
     </>
   );
-};
+});
 
 export default Section2;
 

@@ -23,6 +23,10 @@ export default {
           '0%': { transform: 'translateY(-100%)' },
           '100%': { transform: 'translateY(0)' },
         },
+        slideInBottom: {
+          '0%': { transform: 'translateY(100%)', opacity: '0' }, // Start off-screen and invisible
+          '100%': { transform: 'translateY(0)', opacity: '1' },  // End at original position and visible
+        },
         slideInTopRight: {
           '0%': { transform: 'translate(100%, -100%)' },
           '100%': { transform: 'translate(0, 0)' },
@@ -41,6 +45,7 @@ export default {
         },
       },
       animation: {
+        'slideInBottom' : 'slideInBottom 0.5s forwards', // Define the animation with duration
         'slideInLeft': 'slideInLeft 1s ease-out',
         'pop-in': 'popIn 1.0s ease-in-out',
         'zoomIn': 'zoomIn 1.5s ease-out forwards',
