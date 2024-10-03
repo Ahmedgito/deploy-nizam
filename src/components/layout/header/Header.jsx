@@ -52,7 +52,7 @@ const getBackgroundImage = () => {
         {/* Nav */}
         <nav className="relative z-10 bg-transparent">
           <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4 md:p-6">
-            <a href="/" className="flex items-center">
+            <a href="/deploy-nizam/#" className="flex items-center">
               <img src={logo} className="h-10 md:h-14" alt="Logo" />
             </a>
             <button
