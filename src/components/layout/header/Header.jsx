@@ -5,7 +5,8 @@ import Prodbg from '../../../assets/Production/prod_bg.png'
 import Aboutbg from '../../../assets/About/image.png' ;
 import { Link, useLocation } from 'react-router-dom';
 import Productbg from '../../../assets/Product/products_bg.jpg'
-
+import susbg from '../../../assets/Sustainibility/sus-bg.jpg'
+import cbg from '../../../assets/ContactUs/c_bg.jpg'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,13 +20,17 @@ const location = useLocation();
 const getBackgroundImage = () => {
   switch (location.pathname) {
     case '/':
-      return background; // Home page background
+      return background; 
     case '/about':
       return Aboutbg  ; 
     case '/production':
       return Prodbg  ;
       case '/products':
       return Productbg  ;  
+      case '/sustainability':
+        return susbg  ;
+        case '/contactus':
+          return cbg  ;
       default:
       return background; // Fallback background
   }
@@ -75,8 +80,8 @@ const getBackgroundImage = () => {
                 <li><Link to="/about" className="text-white">About Us</Link></li>
                 <li><Link to="/production" className="text-white">Production</Link></li>
                 <li><Link to="/products" className="text-white">Products</Link></li>
-                <li><a href="#" className="text-white">Sustainability</a></li>
-                <li><a href="#" className="text-white">Contact Us</a></li>
+                <li><Link to="/sustainability" className="text-white">Sustainability</Link></li>
+                <li><Link to="/contactus" className="text-white">Contact Us</Link></li>
               
               </ul>
             </div>
@@ -102,8 +107,8 @@ const getBackgroundImage = () => {
           <li><Link to="/about" className="text-white">About Us</Link></li>
           <li><Link to="/production" className="text-white">Production</Link></li>
           <li><Link to="/products" className="text-white">Products</Link></li>
-            <li><a href="#" className="text-white text-lg">Sustainability</a></li>
-            <li><a href="#" className="text-white text-lg">Contact Us</a></li>
+          <li><Link to="/sustainability" className="text-white">Sustainability</Link></li>
+            <li><Link to="/contactus" className="text-white">Contact Us</Link></li>
           </ul>
         </div>
       </section>
