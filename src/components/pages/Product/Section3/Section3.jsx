@@ -30,13 +30,17 @@ const Section3 = React.forwardRef((props, sectionRef) => {
          
         className={`mt-4 text-2xl font-semibold text-gray-700 ${inView ? 'animate-slideInLeft' : 'opacity-0'}`}
         >ON OUR DIGITAL LIBRARY</h3>
-        <p className={` mt-4 pr-36 text-2xl text-black leading-relaxed  ${inView ? 'animate-slideInLeft' : 'opacity-0'}`} >
+        <p className={` mt-4 mb-10 pr-36 text-2xl text-black leading-relaxed  ${inView ? 'animate-slideInLeft' : 'opacity-0'}`} >
           To access our latest collections, developments, and all the fun things we are doing, please request 
           the Nizam Workwear representative you are in contact with to share access with you.
         </p>
         {/* Call-to-Action Button */}
-        <button className="mt-6 px-20 py-3 bg-[#db7216] text-white text-lg font-bold   hover:bg-orange-700 transition">
+        <button>
+        <a
+        href='https://library.nizamapparel.com/'
+         className="mt-10 px-20 py-3 bg-[#db7216] text-white text-lg font-bold    hover:bg-orange-700 transition">
           VISIT NOW
+        </a>
         </button>
       </div>
 

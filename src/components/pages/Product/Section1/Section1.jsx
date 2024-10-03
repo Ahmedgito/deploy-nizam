@@ -29,9 +29,12 @@ const Section3 = React.forwardRef((props, sectionRef) => {
       <h3 className="text-white text-2xl font-normal mb-6">
         SUSTAINABLE ETHICAL FACILITIES
       </h3>
-      <button className="bg-white  text-black text-xl font-semibold py-2 px-4 shadow-md">
-        SAMPLE REQUEST
-      </button>
+      <a 
+      href="https://library.nizamapparel.com/" 
+      className="bg-white text-black hover:bg-transparent hover:text-white hover:border-white hover:border-4 text-xl font-semibold py-2 px-4 shadow-md inline-block"
+    >
+      SAMPLE REQUEST
+    </a>
     </div>
 
 

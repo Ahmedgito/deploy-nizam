@@ -24,12 +24,12 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl font-bold">Businesses</h2> {/* Increased heading size */}
           <ul className="mt-6 space-y-3">
-            <li><a href="#" className="text-gray-200 hover:text-white text-lg">Nizam Groups</a></li> {/* Increased list text size */}
-            <li><a href="#" className="text-gray-200 hover:text-white text-lg">Nizam Tents</a></li>
-            <li><a href="#" className="text-gray-200 hover:text-white text-lg">Nizam Apparel</a></li>
-            <li><a href="#" className="text-gray-200 hover:text-white text-lg">Nizam Canvas</a></li>
-            <li><a href="#" className="text-gray-200 hover:text-white text-lg">Nizam Events</a></li>
-            <li><a href="#" className="text-gray-200 hover:text-white text-lg">Nizam Energy</a></li>
+            <li><a href="https://nizamgroup.com/" className="text-gray-200 hover:text-white text-lg">Nizam Groups</a></li> {/* Increased list text size */}
+            <li><a href="https://nizamtents.com/" className="text-gray-200 hover:text-white text-lg">Nizam Tents</a></li>
+            <li><a href="https://nizamapparel.com/" className="text-gray-200 hover:text-white text-lg">Nizam Apparel</a></li>
+            <li><a href="https://nizamcanvas.com/" className="text-gray-200 hover:text-white text-lg">Nizam Canvas</a></li>
+            <li><a href="https://nizamevents.com/" className="text-gray-200 hover:text-white text-lg">Nizam Events</a></li>
+            <li><a href="https://nizamenergy.com/" className="text-gray-200 hover:text-white text-lg">Nizam Energy</a></li>
           </ul>
         </div>
 
@@ -37,10 +37,10 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl font-bold">Quick Links</h2> {/* Increased heading size */}
           <ul className="mt-6 space-y-3">
-            <li><a href="#" className="text-gray-200 hover:text-white text-lg">Home</a></li> {/* Increased list text size */}
-            <li><a href="#" className="text-gray-200 hover:text-white text-lg">About Us</a></li>
-            <li><a href="#" className="text-gray-200 hover:text-white text-lg">Production</a></li>
-            <li><a href="#" className="text-gray-200 hover:text-white text-lg">Products</a></li>
+            <li><a href="/#" className="text-gray-200 hover:text-white text-lg">Home</a></li> {/* Increased list text size */}
+            <li><a href="/#/about" className="text-gray-200 hover:text-white text-lg">About Us</a></li>
+            <li><a href="/#/production" className="text-gray-200 hover:text-white text-lg">Production</a></li>
+            <li><a href="/#/products" className="text-gray-200 hover:text-white text-lg">Products</a></li>
             <li><a href="#" className="text-gray-200 hover:text-white text-lg">Sustainability</a></li>
             <li><a href="#" className="text-gray-200 hover:text-white text-lg">Contact Us</a></li>
           </ul>
