@@ -15,7 +15,7 @@ const Footer = () => {
           <p className="text-gray-200 text-base mt-8"> {/* Increased text size */}
             <img src ={linkedin} />
             Copyright © 2024 H. Nizam Din & Sons. All Rights Reserved.<br />
-            Powered by IdeaBox
+            Powered by Mean3
           </p>
          
         </div>
