@@ -1,7 +1,8 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import bg from '../../../../assets/Production/section_img.png';
-import arrow from '../../../../assets/Home/arrow-min.png'
+import arrow from '../../../../assets/Home/Arrow-min.png' ;
+
 const Section6 = React.forwardRef((props, sectionRef) => {
   // Intersection Observer hook for animations
   const { ref: inViewRef, inView } = useInView({
