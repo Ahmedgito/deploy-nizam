@@ -45,7 +45,7 @@ export default {
         },
       },
       animation: {
-        'slideInBottom' : 'slideInBottom 0.5s forwards', // Define the animation with duration
+        'slideInBottom' : 'slideInBottom 1s forwards', // Define the animation with duration
         'slideInLeft': 'slideInLeft 1s ease-out',
         'pop-in': 'popIn 1.0s ease-in-out',
         'zoomIn': 'zoomIn 1.5s ease-out forwards',

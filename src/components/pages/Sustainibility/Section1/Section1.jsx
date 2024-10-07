@@ -13,7 +13,33 @@ const Section1 = React.forwardRef((props, sectionRef) => {
   return (
     <>
 
-    
+    {/* {Desktop-View} */}
+ <div className="md:block hidden" ref={inViewRef}>
+        <section  ref={sectionRef} data-title="Sustainability">
+      
+          <div className="font-montserrat  absolute inset-0 flex items-center justify-center ">
+            <h1 className="md:text-7xl md:pt-40 pt-20 text-4xl text-[#db7216] font-bold text-center">
+              Sustainibility
+            </h1>
+          </div>
+     
+        </section>
+      </div>
+
+                    {/* {Mobile-View} */}
+
+      <div className=" block md:hidden" ref={inViewRef}>
+        <section  ref={sectionRef} data-title="Sustainability">
+      
+          <div className="font-montserrat  absolute inset-0 flex items-center justify-center ">
+            <h1 className="  pt-20 text-4xl text-orange-500 font-bold text-center">
+              Sustainibility
+            </h1>
+          </div>
+     
+        </section>
+      </div>
+
 
     </>
   ) ;
