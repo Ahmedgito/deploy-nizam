@@ -78,26 +78,26 @@ const Section4 = React.forwardRef((props, sectionRef) => {
           </div>
 
           {/* Text Goals */}
-          <div className="col-span-12 mt-20 space-y-4 flex flex-col items-center">
+          <div className="col-span-12 mt-20 space-y-10 flex flex-col items-center">
             <div className="flex items-center space-x-6">
               <img src={carbonNeutralIcon} alt="Carbon Neutral" className={`w-20 h-20 `} />
               <div className={` `}>
                 <p className="text-white font-bold text-lg">Carbon Neutral</p>
-                <p className="text-gray-300 text-sm">by 2023</p>
+                <p className="text-gray-300 text-base">by 2023</p>
               </div>
             </div>
             <div className="flex items-center space-x-6">
               <img src={zeroDischargeIcon} alt="Zero Discharge" className={`w-20 h-20  `} />
               <div className={` `}>
                 <p className="text-white font-bold text-lg">Zero Discharge</p>
-                <p className="text-gray-300 text-sm">by 2025</p>
+                <p className="text-gray-300 text-base">by 2025</p>
               </div>
             </div>
             <div className="flex items-center space-x-6">
               <img src={naturePositiveIcon} alt="Nature Positive" className={`w-20 h-20 `} />
               <div className={` }`}>
                 <p className="text-white font-bold text-lg">Nature Positive</p>
-                <p className="text-gray-300 text-sm">by 2027</p>
+                <p className="text-gray-300 text-base">by 2027</p>
               </div>
             </div>
           </div>
