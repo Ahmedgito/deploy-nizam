@@ -59,7 +59,7 @@ const getBackgroundImage = () => {
         {/* Nav */}
         <nav className="relative z-10 bg-transparent">
           <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4 md:p-6">
-            <a href="/deploy-nizam/#/home" className="flex items-center">
+            <a href="/deploy-nizam/#" className="flex items-center">
               <img src={logo} className="h-10 md:h-14" alt="Logo" />
             </a>
             <button
@@ -100,15 +100,15 @@ const getBackgroundImage = () => {
               </svg>
             </button>
           </div>
-          <a href="/" className="flex ms-4 justify-start">
-            <img src={logo} className="h-10 md:h-14" alt="Logo" />
+          <a href="/deploy-nizam/#" className="flex ms-4 justify-start">
+            <img src={logo} className="h-14 md:h-14" alt="Logo" />
           </a>
           <ul className="flex flex-col items-start p-4 space-y-4">
-          <li><Link to="/about" className="text-white">About Us</Link></li>
-          <li><Link to="/production" className="text-white">Production</Link></li>
-          <li><Link to="/products" className="text-white">Products</Link></li>
-          <li><Link to="/sustainability" className="text-white">Sustainability</Link></li>
-            <li><Link to="/contactus" className="text-white">Contact Us</Link></li>
+          <li><Link to="/about" className="text-white text-lg">About Us</Link></li>
+          <li><Link to="/production" className="text-white text-lg">Production</Link></li>
+          <li><Link to="/products" className="text-white text-lg">Products</Link></li>
+          <li><Link to="/sustainability" className="text-white text-lg">Sustainability</Link></li>
+            <li><Link to="/contactus" className="text-white text-lg">Contact Us</Link></li>
           </ul>
         </div>
       </section>
