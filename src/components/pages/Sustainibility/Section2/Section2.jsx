@@ -46,6 +46,9 @@ const Section2 = React.forwardRef((props, sectionRef) => {
           <img src={vestImage} alt="Nizam One Vest" className="absolute top-[28rem] w-96 h-full max-w-xs right-0 object-contain " />
         </div>
       </div>
+      <div>
+    <img src={Sidecircle} alt="Nizam One Vest" className="w-36 z-10 absolute flex justify-start top-[50rem] h-96 max-w-sm left-0 object-contain " />
+    </div>
     </section>
     </section>
 
@@ -64,18 +67,23 @@ const Section2 = React.forwardRef((props, sectionRef) => {
     <img src={Sidecircle} alt="Nizam One Vest" className="w-24 z-10 opacity-85 absolute flex justify-start top-[55rem] h-64 max-w-sm left-0 object-contain " />
     </div>
 
-    <p className="text-gray-700 text-lg leading-tight">
+    <p className="text-[#28303d] text-lg leading-tight">
       Our secret to surviving 150 years is constantly raising the bar and innovating. Our prime focus going forward is sustainability, which is why we have launched our initiative Nizam One. It is our obsession to reimagine everything, making sustainability the number-one objective. Nizam One is a holistic approach trying to become one with the earth and people.
     </p>
-    <p className="text-gray-700 text-lg leading-tight">
+    <p className="text-[#28303d] text-lg leading-tight">
       Nizam One builds so our core values as an organization commit to the change. We are driving this initiative not only from our values but also picking up our process map of Input, Process, Output, and People.
+    </p>
+    <p className="text-[#DB7216] font-extrabold text-2xl text-center leading-tight">
+      READ MORE..
     </p>
   </div>
 
   {/* Image Section */}
   <div className="flex justify-end mt-8">
-    <img src={vestImage} alt="Nizam One Vest" className="w-56 h-auto   object-contain" />
+    <img src={vestImage} alt="Nizam One Vest" className="w-56 h-auto  object-contain" />
+
   </div>
+
 </section>
 
 
